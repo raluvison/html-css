@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
     <style>
+        caption {
+            font-size: 2em;
+            padding: 10px;
+            font-weight: bold;
+            background-color: lightgray;
+        }
+        
         table {
             width: 500px;
             border-collapse: collapse;
@@ -28,10 +35,11 @@
 <body>
     <h1>Uso de Tabelas Grandes</h1>
     <table>
+        <caption>Três Grandes Estados do Brasil</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -50,7 +58,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>82.352.783</strong></td>
             </tr>
         </tfoot>
