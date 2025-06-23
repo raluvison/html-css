@@ -36,33 +36,25 @@ main > p {
     font-size: 2em;
 }
 
-.celular-container {
-    position: relative;
-    width: 200px;
-    height: 400px;
+section#phone {
+    position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(0.8);
+    
+    height: 627px;
+    width: 311px;
+    background: blue url(../images/frame-iphone.png) no-repeat;
 }
 
-.celular-container iframe {
+iframe#visual-phone {
+    background-color: red;
     position: absolute;
-    top: 14%;
-    left: 12.5%;
-    width: 75%;
-    height: 73%;
-    border: none;
-    z-index: 2;
-    overflow: hidden;
-}
+    top: 80px;
+    left: 22px;
 
-img#phone {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
+    width: 267px;
+    height: 472px;
 }
 
 nav img {
