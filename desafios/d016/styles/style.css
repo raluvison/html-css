@@ -55,21 +55,64 @@ div#form > h1 {
 
 div#form > p {
     font-size: 0.8em;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
-div.campo {
+form > div.campo {
     background-color: rgb(0, 111, 185);
+    display: block;
     color: white;
-    padding: 5px;
+    width: 100%;
+    height: 40px;
     margin-bottom: 10px;
     border-radius: 5px;
 }
 
-div.campo > input {
+form > div.campo > input {
     background-color: lightblue;
     padding: 5px;
-    
+    width: 88%;
     border: 0px;
     border-radius: 3px;
+}
+
+form > div > input[type=submit] {
+    display: block;
+    background-color: rgb(0, 153, 255);
+    font-size: 1em;
+    border: 0px;
+    border-radius: 5px;
+    width: 100%;
+    height: 40px;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+form > div > input[type=submit]:hover {
+    background-color: rgb(0, 111, 185);
+}
+
+div#forget > a {
+    display: block;
+    background-color: white;
+    font-size: 1em;
+    border: 2px solid rgb(0, 153, 255);
+    border-radius: 5px;
+    padding-top: 7px;
+    width: 100%;
+    height: 40px;
+    color: rgb(0, 153, 255);
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+div#forget > a > span {
+    font-size: 0.8em;
+}
+
+div#forget > a:hover {
+    color: white;
+    background-color: rgb(0, 153, 255);
 }
