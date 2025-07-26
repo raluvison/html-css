@@ -6,24 +6,29 @@
     <title>LavMotors</title>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
 <body>
     <header>
         <h1>
             LavMotors
         </h1>
-        <nav>
+        
+        <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        
+    </header>
+    <menu id="menu">
             <a href="#">Inicio</a>
             <a href="#">Sobre</a>
             <a href="#">Galeria</a>
             <a href="#">Nossos Serviços</a>
             <a href="#">Fale Conosco</a>
-        </nav>
-    </header>
+        </menu>
     <main>
         <article id="welcome">
             <h1>
-                Bem-vindo à LavMotors
+                Bem-vindo à <br> LavMotors
             </h1>
              
             <p>
@@ -31,7 +36,9 @@
             </p>
         </article>
         <article id="sobre-main">
-            <img src="images/lavmotors-principal.jpg" alt="LavMotors">
+            <div id="image-lm-sobre">
+
+            </div>
             <div id="sobre">
                 <h2>
                 Sobre nós
@@ -52,5 +59,15 @@
     <footer>
         <p>Site criado por <a href="https://www.instagram.com/raluvison/" target="_blank">Rafael Luvison</a>.</p>
     </footer>
+
+    <script>
+        function clickMenu() {
+            if(menu.style.display == 'block') {
+                menu.style.display = 'none'
+            } else {
+                menu.style.display = 'block'
+            }
+        } 
+    </script>
 </body>
 </html>
