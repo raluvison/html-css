@@ -74,6 +74,8 @@ menu > a:hover {
     background-color: var(--cor2);
 }
 
+
+
 main > article#welcome {
     display: block;
 }
@@ -88,19 +90,26 @@ main > article#welcome > p {
     padding-bottom: 15px;
 }
 
+
+
 main > article#sobre-main {
+    display: flex;
+    
     background-color: var(--cor4);
     color: white;
-    display: block;
-    height: 400px;
+    
+    
+    margin-bottom: 15px;
+    padding: 15px;
 }
 
 main > article#sobre-main > div#image-lm-sobre {
     background-image: url(images/lavmotors-principal.jpg);
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
     
-    height: 200px;
-    width: 40%;
+    height: 190px;
+    width: 250px;
     border: 2px solid var(--cor3);
     border-radius: 5px;
     
@@ -112,4 +121,30 @@ main > article#sobre-main > div#sobre {
     width: 60%;
     display: block;
     float: right;
+    padding: 10px;
+}
+
+main > article#sobre-main > div#sobre > h2 {
+    margin-bottom: 10px;
+}
+
+
+
+footer {
+    background-color: var(--cor4);
+}
+
+footer > p {
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+footer > p > a {
+    color: white;
+    text-decoration: none;
+}
+
+footer > p > a:hover {
+    text-decoration: underline;
 }
