@@ -22,6 +22,8 @@
         header {
             display: flex;
             flex-flow: row wrap;
+            justify-content: space-between;
+            align-items: center;
             
             
             background-color: grey;
@@ -31,16 +33,32 @@
 
         header > h1 {
             border: 1px solid black;
-            width: 200px;
+            flex: 0 0 200px;
         }
 
         header > nav {
             border: 1px solid black;
 
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-end;
+            
         }
         
         header > nav > a {
             color: white;
+            background-color: black;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        header > nav > a:hover {
+            background-color: white;
+            color: black;
+            transition: background-color .3s;
         }
         
         main {
