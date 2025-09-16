@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Responsivo</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h1>
+            Meu site
+        </h1>
+        <span id="menu-btn" class="material-symbols-outlined" >menu</span>
+        <nav id="menu-lateral" class="side-menu">
+            <span id="close-menu-btn" class="material-symbols-outlined">menu</span>
+            <a href="#">Opção 1</a>
+            <a href="#">Opção 2</a>
+            <a href="#">Opção 3</a>
+            <a href="#">Opção 4</a>
+            <a href="#">Opção 5</a>
+            <a href="#">Opção 6</a>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, eius esse quisquam voluptatum, recusandae repudiandae laborum fugiat ipsa impedit consequatur modi perferendis deleniti quis eligendi doloribus! Aspernatur optio nisi harum.</p>
+        </div>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, at aspernatur voluptatem provident, corrupti ipsa maxime expedita tempore quia, debitis suscipit consectetur magni est natus! Pariatur nam inventore possimus dolorem!</p>
+        </div>
+    </main>
+    <script>
+        const btn = document.getElementById("menu-btn")
+        const menu = document.getElementById("menu-lateral")
+        const closeBtn = document.getElementById("close-menu-btn")
+
+        btn.addEventListener("click", () => {menu.classList.add("open")})
+        
+        closeBtn.addEventListener("click", () => {menu.classList.remove("open")})
+    </script>
+</body>
+</html>
