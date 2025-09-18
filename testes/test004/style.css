@@ -19,13 +19,20 @@ header {
     align-items: center;
 }
 
+header > h1 > a {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
+
 #menu-btn {
     cursor: pointer;
-    font-size: 2em;
+    font-size: 2.5em;
 }
 
 #menu-btn:hover {
-    color: grey;
+    border-radius: 50%;
+    background-color: rgb(189, 189, 189);
 }
 
 nav.side-menu {
@@ -64,12 +71,29 @@ nav.side-menu > a:hover {
 nav.side-menu > span#close-menu-btn {
     align-self: flex-end;
     cursor: pointer;
-    font-size: 2em;
+    font-size: 2.5em;
     background-color: grey;
     padding: 10px;
-    border-radius: 5px;
+    border-radius: 50%;
+    margin: 10px 10px 0px 0px;
 }
 
 nav.side-menu > span#close-menu-btn:hover {
     background-color: #777;
+}
+
+main > section {
+    display: flex;
+    min-height: 100vh;
+    flex-flow: column;
+    
+    align-items: center;
+}
+
+section > article {
+    background-color: white;
+    width: 80%;
+    height: 200px;
+    padding: 20px;
+    border-radius: 5px;
 }
