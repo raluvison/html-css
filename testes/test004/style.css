@@ -86,8 +86,10 @@ main > section {
     display: flex;
     min-height: 100vh;
     flex-flow: column;
+    gap: 30px;
     
     align-items: center;
+    margin-top: 20px;
 }
 
 section > article {
