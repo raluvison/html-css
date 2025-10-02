@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /* 
   Variáveis para cores:
   --fundo-principal
@@ -7,3 +9,77 @@
   --destaque-inverso
   --fundo-card
 */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: blue;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav > a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
+
+nav > a:hover {
+  text-decoration: underline;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 20px 1fr 20px;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  
+}
+
+#ficha {
+  grid-area: 1 / 2 / 2 / -1;
+}
+
+#skills {
+  grid-area: 2 / 2 / 3 / -1;
+}
+
+#skill-container > .item > .progresso {
+  background-color: blue;
+  height: 10px;
+  border-radius: 5px;
+}
+
+#formacao {
+  grid-area: 3 / 2 / 4 / -1;
+}
+
+#projetos {
+  grid-area: 4 / 2 / 5 / -1;
+}
+
+
+
+footer {
+  background-color: blue;
+  padding: 15px;
+}
+
+footer > p {
+  color: white;
+  text-align: center;
+}
+
+footer > p > a {
+  color: white;
+  text-decoration: none;
+}
+
+footer > p > a:hover {
+  text-decoration: underline;
+}
