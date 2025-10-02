@@ -10,6 +10,15 @@
   --fundo-card
 */
 
+:root {
+  --fundo-principal: #8538B1;
+  --destaque:  #9721DB;
+  --destaque-inverso: ;
+  --titulo: #503C5C;
+  --texto-inverso: ;
+  --fundo-card: #6D4186;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -18,8 +27,8 @@
 }
 
 header {
-  background-color: blue;
-  padding: 10px;
+  background-color: var(--fundo-principal);
+  padding: 15px;
   display: flex;
   justify-content: flex-end;
 }
@@ -36,13 +45,40 @@ nav > a:hover {
 
 main {
   display: grid;
-  grid-template-columns: 20px 1fr 20px;
+  grid-template-columns: 30px 1fr 30px;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   
 }
 
 #ficha {
-  grid-area: 1 / 2 / 2 / -1;
+  grid-area: 1 / 2 / 2 / -2;
+}
+
+#ficha > i {
+  background-color: red;
+  margin: auto;
+  display: block;
+  margin-top: 15px;
+}
+
+#ficha > h1 {
+  margin-bottom: 15px;
+  color: var(--titulo);
+}
+
+#ficha > p {
+  line-height: 1.5;
+  text-align: justify;
+  margin-bottom: 15px;
+}
+
+#ficha > #social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 2em;
+  margin-bottom: 50px;
 }
 
 #skills {
@@ -50,7 +86,7 @@ main {
 }
 
 #skill-container > .item > .progresso {
-  background-color: blue;
+  background-color: var(--destaque);
   height: 10px;
   border-radius: 5px;
 }
@@ -66,7 +102,7 @@ main {
 
 
 footer {
-  background-color: blue;
+  background-color: var(--fundo-principal);
   padding: 15px;
 }
 
