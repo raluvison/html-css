@@ -131,6 +131,10 @@ main {
   justify-content: space-between;
 }
 
+.info > .porcent {
+  color: var(--destaque);
+}
+
 #skill-container > .item > .progresso {
   background-color: var(--destaque);
   height: 10px;
@@ -186,6 +190,13 @@ main {
 #projetos {
   grid-area: 4 / 2 / 5 / -1;
 }
+
+#projetos > h2 {
+  color: var(--titulo);
+  margin-bottom: 15px;
+}
+
+
 
 footer {
   background-color: var(--fundo-principal);
