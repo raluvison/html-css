@@ -23,7 +23,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 header {
@@ -31,21 +31,25 @@ header {
   padding: 15px;
   display: flex;
   justify-content: flex-end;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
 }
 
 nav > a {
   color: white;
   padding: 10px;
   text-decoration: none;
+  transition: background-color 0.5s, color 0.5s;
+  border-radius: 10px;
 }
 
 nav > a:hover {
-  text-decoration: underline;
+  color: var(--fundo-card);
+  background-color: var(--destaque);
 }
 
 main {
   display: grid;
-  grid-template-columns: 30px 1fr 30px;
+  grid-template-columns: 40px 1fr 40px;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   
 }
@@ -54,16 +58,26 @@ main {
   grid-area: 1 / 2 / 2 / -2;
 }
 
-#ficha > i {
-  background-color: red;
+#ficha > #foto-perfil {
+  background-image: url(../imagens/luvison-perfil.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
   margin: auto;
-  display: block;
-  margin-top: 15px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  border: 2px solid white;
+  outline: 5px solid var(--destaque);
+  box-shadow: 0px 0px 30px rgba(0,0,0,0.8);
 }
 
 #ficha > h1 {
   margin-bottom: 15px;
   color: var(--titulo);
+  font-size: 2em;
 }
 
 #ficha > p {
@@ -81,8 +95,21 @@ main {
   margin-bottom: 50px;
 }
 
+#social-media > a > i {
+  color: var(--titulo);
+  transition: 0.3s ease;
+}
+
+#social-media > a > i:hover {
+  color: var(--destaque);
+}
+
 #skills {
   grid-area: 2 / 2 / 3 / -1;
+}
+
+#skills > h2 {
+  color: var(--titulo);
 }
 
 #skill-container > .item > .progresso {
