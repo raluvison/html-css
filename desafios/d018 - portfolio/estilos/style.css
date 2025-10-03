@@ -105,11 +105,23 @@ main {
 }
 
 #skills {
-  grid-area: 2 / 2 / 3 / -1;
+  grid-area: 2 / 2 / 3 / -2;
 }
 
 #skills > h2 {
   color: var(--titulo);
+  margin-bottom: 15px;
+}
+
+#skill-container > .item {
+  margin-bottom: 20px;
+}
+
+.item > .info {
+  margin-bottom: 5px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
 }
 
 #skill-container > .item > .progresso {
@@ -125,8 +137,6 @@ main {
 #projetos {
   grid-area: 4 / 2 / 5 / -1;
 }
-
-
 
 footer {
   background-color: var(--fundo-principal);
