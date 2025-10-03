@@ -15,6 +15,7 @@
   --destaque:  #9721DB;
   --destaque-inverso: ;
   --titulo: #503C5C;
+  --texto: #bb6ee7;
   --texto-inverso: ;
   --fundo-card: #6D4186;
 }
@@ -50,7 +51,7 @@ nav > a:hover {
 main {
   display: grid;
   grid-template-columns: 40px 1fr 40px;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  
   
 }
 
@@ -106,6 +107,7 @@ main {
 
 #skills {
   grid-area: 2 / 2 / 3 / -2;
+  margin-bottom: 30px;
 }
 
 #skills > h2 {
@@ -131,7 +133,48 @@ main {
 }
 
 #formacao {
-  grid-area: 3 / 2 / 4 / -1;
+  grid-area: 3 / 2 / 4 / -2;
+  margin-bottom: 50px;
+}
+
+#formacao > h2 {
+  color: var(--titulo);
+  margin-bottom: 15px;
+}
+
+.container-formacao {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 15px;
+}
+
+.container-formacao > .curso {
+  padding: 5px;
+  padding-left: 15px;
+  border-radius: 10px;
+  border-left: var(--destaque) solid 5px;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+  transition: 0.3s ease ;
+}
+
+.container-formacao > .curso:hover {
+  border-left: var(--fundo-card) solid 15px;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.4)
+}
+
+.curso > .curso-periodo {
+  font-weight: bold;
+  font-size: 0.8em;
+  margin-bottom: 3px;
+}
+
+.curso > .curso-local {
+  color: var(--texto);
+  margin-bottom: 3px;
+}
+
+.curso > .curso-legenda {
+  font-size: 0.9em;
 }
 
 #projetos {
