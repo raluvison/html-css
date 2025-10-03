@@ -50,9 +50,7 @@ nav > a:hover {
 
 main {
   display: grid;
-  grid-template-columns: 40px 1fr 40px;
-  
-  
+  grid-template-columns: 40px 1fr 40px; 
 }
 
 #ficha {
@@ -96,13 +94,20 @@ main {
   margin-bottom: 50px;
 }
 
+#social-media > a {
+  position: relative;    
+} 
+
 #social-media > a > i {
   color: var(--titulo);
   transition: 0.3s ease;
+  border-radius: 50%;
+  transform-origin: center;
 }
 
 #social-media > a > i:hover {
   color: var(--destaque);
+  transform: scale(1.1);
 }
 
 #skills {
@@ -146,6 +151,7 @@ main {
   display: flex;
   flex-flow: column nowrap;
   gap: 15px;
+  cursor: pointer;
 }
 
 .container-formacao > .curso {
