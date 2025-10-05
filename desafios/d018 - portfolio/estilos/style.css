@@ -188,7 +188,8 @@ main {
 }
 
 #projetos {
-  grid-area: 4 / 2 / 5 / -1;
+  grid-area: 4 / 2 / 5 / -2;
+  margin-bottom: 50px;
 }
 
 #projetos > h2 {
@@ -196,7 +197,55 @@ main {
   margin-bottom: 15px;
 }
 
+.container-projetos {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 15px;
 
+}
+
+.projeto {
+  display: flex;
+  flex-flow: column;
+  gap: 15px;
+  padding: 10px;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  border-left: 5px solid var(--destaque);
+  transition: 0.3s ease;
+}
+
+.projeto:hover {
+  border-left: 15px solid var(--fundo-card);
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+}
+
+.projeto-image {
+  width: 100%;
+  border-radius: 8px; 
+}
+
+.projeto-periodo {
+  font-weight: bold;
+  font-size: 0.8em;
+  margin-bottom: 3px;
+}
+
+.projeto-titulo {
+  color: var(--texto);
+  margin-bottom: 3px;
+}
+
+.projeto-legenda {
+  font-size: 0.9em;
+  margin-bottom: 3px;
+}
+
+summary {
+  font-weight: bold;
+  font-size: 0.9em;
+  cursor: pointer;
+}
 
 footer {
   background-color: var(--fundo-principal);
@@ -211,8 +260,9 @@ footer > p {
 footer > p > a {
   color: white;
   text-decoration: none;
+  transition: 0.3s ease;
 }
 
 footer > p > a:hover {
-  text-decoration: underline;
+  color: var(--texto);
 }
